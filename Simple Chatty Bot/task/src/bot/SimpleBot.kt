@@ -16,25 +16,25 @@ fun greet(assistantName: String, birthYear: String) {
     println("Please, remind me your name.")
 }
 fun remindName() {
-//    print("> ")
+   print("> ")
     val name = scanner.nextLine()
     println("What a great name you have, ${name}!")
 }
 fun guessAge() {
     println("Let me guess your age.")
     println("Enter remainders of dividing your age by 3, 5 and 7.")
-//    print("> ")
+   print("> ")
     val rem3 = scanner.nextInt()
-//    print("> ")
+   print("> ")
     val rem5 = scanner.nextInt()
-//    print("> ")
+   print("> ")
     val rem7 = scanner.nextInt()
     val age = { a: Int, b: Int, c: Int -> (a * 70 + b * 21 + c * 15) % 105 }
     println("Your age is ${age(rem3, rem5, rem7)}; that's a good time to start programming!")
 }
 fun count() {
     println("Now I will prove to you that I can count to any number you want.")
-//    print("> ")
+   print("> ")
     val num = scanner.nextInt()
     for (i in 0..num) {
         print(i)
@@ -49,11 +49,11 @@ fun test() {
     println("3. To determine the execution time of a program.")
     println("4. To interrupt the execution of a program.")
     val right = TWO
-//    print("> ")
+   print("> ")
     while (scanner.hasNextInt()) {
         val input = scanner.nextInt()
         if (input == right) break else println("Please, try again.")
-//        print("> ")
+       print("> ")
     }
 }
 fun end() {
